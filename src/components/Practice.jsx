@@ -14,7 +14,7 @@ import {
      Avatar,
      Badge,Card,
      CardMedia,CardContent,CardActions,
-     Container} from '@mui/material';
+     Container,Grid} from '@mui/material';
      import MenuIcon from '@mui/icons-material/Menu';
      import { Mail, Notifications } from "@mui/icons-material";
      import { useState } from 'react';
@@ -86,8 +86,10 @@ export default function Practice() {
       </AppBar>
     {/* the card outside the Appbar */}
     {/* we need container and box */}
-    <Container sx={{mt:5}}  alignItems="center">
-        <Box  alignItems="center" width="300px">
+    < Container sx={{mt:5}}  >
+        <Box   width="300px">
+        <Grid container justifyContent="center">
+        <Grid item>
     <Card elevation={3}>
       <CardMedia          /* to style the img */
         sx={{ height: 140 }}
@@ -99,8 +101,7 @@ export default function Practice() {
        Post Title
         </Typography>
         <Typography variant="body1" color="text.secondary" sx={{ p: 2 }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, laudantium. Beatae, aliquid doloribus exercitationem consectetur modi laboriosam incidunt quidem consequatur nostrum fuga! Nobis totam voluptas veritatis natus tenetur doloribus magni.
         </Typography>
       </CardContent>
       <Stack alignItems="center" spacing={2}>
@@ -110,6 +111,8 @@ export default function Practice() {
       </CardActions>
       </Stack>
     </Card>
+    </Grid>
+      </Grid>
     </Box>
     </Container>
              
